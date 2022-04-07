@@ -1,0 +1,131 @@
+/* Simple style reset*/
+body, p, div, a, ul, li, input {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: sans-serif;
+}
+
+button {
+    background-color: #666666;
+    border: none;
+    padding: 5px 10px;
+    color: #ffffff;
+}
+
+button:focus, button:active {
+    border: none;
+    outline: none;
+    background-color: rgb(169, 169, 169);
+}
+
+.clearfix {
+    clear: both;
+}
+
+.header {
+    background-color: black;
+    padding: 15px 0px;
+}
+
+.header h1 {
+    color: white;
+    text-align: center;
+}
+
+.add-todo {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+}
+
+.todos {
+    padding-top: 20px;
+    display: flex;
+}
+
+* {
+    box-sizing: border-box;
+}
+.headRow {
+    padding: 10px;
+    display: flex;
+    background-color: dimgray;
+
+}
+.leftCol, .rightCol {
+    padding: 10px;
+    flex: 50%;
+    text-align: center;
+    color: white;
+}
+
+.todo {
+    background-color: rgb(169, 169, 169);
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+    line-height: 36px;
+    padding: 20px 10px;
+    transition: all ease-in-out 0.3s;
+
+}
+
+.notDone, .Done {
+    padding: 10px;
+    flex: 50%;
+
+}
+
+
+.todo:hover {
+    background-color: rgba(169, 169, 169, .6);
+}
+
+.alerts {
+    text-align: center;
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+#Info {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb
+}
+
+#Deleted {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+#Warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+
+#Moved {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.todo button {
+    border-radius: 50%;
+    float: right;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: red;
+}
+
+.todo button:active, .todo button:focus {
+    background-color: darkred;
+}

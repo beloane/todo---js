@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>Todo list</h1>
+</header>
+<!-- Add todo Section -->
+<div class="add-todo">
+    <input type="text" id="myText" onkeypress="addTodosOnKey(event)">
+    <button onclick="addTodos()">Add todo</button>
+</div>
+<!--end Add todo Section -->
+<div class="alerts" id="alerts">
+    <!--    <div id="Warning">-->
+    <!--        <strong>Warning!</strong> Nothing to add.-->
+    <!--    </div>-->
+    <!--    <div id="Deleted">-->
+    <!--        <strong>Danger!</strong> To do deleted.-->
+    <!--    </div>-->
+    <!--    <div id="Info">-->
+    <!--        <strong>Info!</strong> New To do added.-->
+    <!--    </div>-->
+    <!--    <div id="Moved">-->
+    <!--        <strong>Item Moved!</strong> Done list updated-->
+    <!--    </div>-->
+</div>
+<div class="headRow">
+    <div class="leftCol">
+        <h2>Not Done</h2>
+    </div>
+    <div class="rightCol">
+        <h2>Done</h2>
+    </div>
+</div>
+<div class="todos">
+    <div class="notDone">
+
+    </div>
+    <div class="Done">
+
+    </div>
+
+    <!--    <div class="todo">-->
+    <!--        <input id="todo-1" type="checkbox">-->
+    <!--        <label for="todo-1">Todo 1</label>-->
+    <!--        <button>X</button>-->
+    <!--    </div>-->
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
